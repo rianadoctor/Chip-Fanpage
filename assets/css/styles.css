@@ -46,8 +46,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 26, 188, 156;
-  --bs-secondary-rgb: 44, 62, 80;
+  --bs-primary-rgb: 212, 100, 155;
+  --bs-secondary-rgb: 255, 173, 225;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -2850,19 +2850,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #1abc9c;
-  --bs-btn-border-color: #1abc9c;
+  --bs-btn-bg: #d4649b;
+  --bs-btn-border-color: #d4649b;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #16a085;
-  --bs-btn-hover-border-color: #15967d;
+  --bs-btn-hover-bg: #c58ca8;
+  --bs-btn-hover-border-color: #c58ca8;
   --bs-btn-focus-shadow-rgb: 60, 198, 171;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #15967d;
-  --bs-btn-active-border-color: #148d75;
+  --bs-btn-active-bg: #c58ca8;
+  --bs-btn-active-border-color: #d4649b;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #1abc9c;
-  --bs-btn-disabled-border-color: #1abc9c;
+  --bs-btn-disabled-bg: #d4649b;
+  --bs-btn-disabled-border-color: #d4649b;
 }
 
 .btn-secondary {
@@ -10859,9 +10859,9 @@ html {
   width: 100%;
   max-width: 7rem;
   height: 0.25rem;
-  background-color: #2c3e50;
+  background-color: #d4649b;
   border-radius: 1rem;
-  border-color: #2c3e50;
+  border-color: #d4649b;
 }
 .divider-custom .divider-custom-line:first-child {
   margin-right: 1rem;
@@ -10870,7 +10870,7 @@ html {
   margin-left: 1rem;
 }
 .divider-custom .divider-custom-icon {
-  color: #2c3e50;
+  color: #d4649b;
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
@@ -10911,13 +10911,13 @@ html {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  color: #e07abe;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
+  color: #e07abe;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10939,11 +10939,11 @@ html {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #1abc9c;
+    background: #e07abe;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #1abc9c;
+    background: #e07abe;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -11013,7 +11013,7 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(212 100 155 / 64%);
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
   opacity: 1;
@@ -11041,7 +11041,7 @@ html {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #2c3e50;
+  background-color: #ffade1;
   color: #fff;
 }
 
