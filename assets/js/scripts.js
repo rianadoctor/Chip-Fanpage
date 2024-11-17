@@ -1,12 +1,3 @@
-/*!
-* Start Bootstrap - Freelancer v7.0.7 (https://startbootstrap.com/theme/freelancer)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -20,7 +11,6 @@ window.addEventListener('DOMContentLoaded', event => {
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
-
     };
 
     // Shrink the navbar 
@@ -44,9 +34,20 @@ window.addEventListener('DOMContentLoaded', event => {
         document.querySelectorAll('#navbarResponsive .nav-link')
     );
     responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
+        responsiveNavItem.addEventListener('click', (e) => {
+            // Prevent the fragment identifier from being added to the URL
+            e.preventDefault();  // Prevent the default anchor behavior
+
+            // Collapse the navbar when an item is clicked (for mobile view)
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
+            }
+
+            // Scroll to the target section
+            const targetId = e.target.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
             }
         });
     });
